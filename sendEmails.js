@@ -46,7 +46,7 @@ const sendEmail = async (recipient) => {
     const emailOptions = {
         from: senderEmail,
         to: recipient.email,
-        subject: 'Enhance Your Customer Interaction with Custom Chatbots',
+        subject: 'Write your E-Mail subject here',
         html: personalizedHtml,
     };
 
