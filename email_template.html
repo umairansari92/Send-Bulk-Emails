@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: black;
+      color: white;
+      font-family: "Poppins", sans-serif;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      margin: auto;
+      background-color: #302424;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: background-color 0.3s ease;
+    }
+
+    .header {
+      font-size: 1.5rem;
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 20px;
+      background-color: #1f2025;
+      padding: 1rem;
+      border-radius: 10px;
+      color: #c96969;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .h3{
+      color: rgb(172, 138, 138);
+      font-size: 25px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: bold;
+      text-decoration: underline ;
+      background-color: #1f2025;
+    }
+
+    .topnav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 1px solid rgb(92, 82, 82);
+      margin-bottom: 20px;
+    }
+
+    .content {
+      margin-top: 20px;
+    }
+
+    p {
+      color: #a89c9b;
+      margin-bottom: 15px;
+      font-size: 20px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: bold;
+    }
+
+    p:hover {
+      background-color: #1a0f0f;
+      color: aqua;
+      font-size: 25px;
+    }
+
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .footer p {
+      color: white;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .social-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-white);
+      background-color: var(--color-grey-5);
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 60%;
+      margin: 0 0.4rem;
+      transition: all 0.4s ease-in-out;
+      text-decoration: none;
+      border: 1px solid white;
+    }
+
+    .social-links a:hover {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      transform: scale(1.1);
+      background-color: #333;
+      color: #ff6347;
+      border-bottom: 2px solid #ff6347;
+    }
+
+    .benefits {
+      margin-top: 20px;
+      color: #a89c9b;
+      font-size: 18px;
+    }
+
+    .benefits ul {
+      list-style-type: disc;
+      color: #a89c9b;
+      margin-bottom: 15px;
+      font-size: 20px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: bold;
+    }
+
+    .benefits ul :hover {
+      background-color: #1a0f0f;
+      color: aqua;
+      font-size: 25px;
+    }
+
+    .benefits li {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        font-size: 1.2rem;
+      }
+      .img {
+        width: 80px;
+        height: 80px;
+      }
+      p {
+        font-size: 16px;
+      }
+      .social-links a {
+        font-size: 12px;
+        padding: 8px 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header {
+        font-size: 1rem;
+      }
+      .img {
+        width: 60px;
+        height: 60px;
+      }
+      p {
+        font-size: 14px;
+      }
+      .social-links a {
+        font-size: 10px;
+        padding: 6px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img class="img" src="https://firebasestorage.googleapis.com/v0/b/cow-booking-nwcb.appspot.com/o/Preview.png?alt=media&token=65eef6b9-949e-4928-a4da-ff85d7be54fa" alt="Company Logo">
+      <h1>Welcome, {{name}}!</h1>
+    </div>
+    <div class="content">
+      <p>Dear {{name}},</p>
+      <p>Are you looking to enhance customer engagement, streamline operations, and boost efficiency in your business? My name is Umair Ahmed Ansari, and I specialize in creating powerful chatbot solutions at DataVerse Technologies.</p>
+      <p>In today's digital age, having a responsive and interactive platform for customer interactions is crucial. Chatbots offer a unique opportunity to automate tasks, provide instant responses, and deliver personalized customer experiences around the clock.</p>
+      <h3 class="h3">Here are some key benefits of integrating chatbots into your business:</h3>
+      <div class="benefits">
+        <ul>
+          <li>24/7 Availability: Ensure your customers receive immediate assistance and information anytime, anywhere, enhancing satisfaction and loyalty.</li>
+          <li>Improved Customer Service: Handle frequently asked questions and routine inquiries efficiently, freeing up your team to focus on more complex issues.</li>
+          <li>Cost Efficiency: Reduce operational costs associated with customer support and engagement while maintaining high service standards.</li>
+          <li>Lead Generation: Capture leads and qualify prospects through interactive conversations, boosting your sales funnel effectiveness.</li>
+          <li>Enhanced User Experience: Provide seamless navigation and instant responses, enhancing overall user satisfaction and retention rates.</li>
+        </ul>
+      </div>
+      <p>At DataVerse Technologies, we understand that every business is unique. Our chatbots are meticulously crafted to align perfectly with your business objectives and customer expectations. Whether you're in need of automating customer support, improving lead generation, or simplifying appointment scheduling, our custom chatbot solutions are designed to meet your specific needs.</p>
+      <p>Ready to explore how chatbots can revolutionize your business? Let's schedule a consultation to discuss your specific requirements and how we can tailor a chatbot solution that delivers measurable results.</p>
+      <p>I look forward to the opportunity to collaborate with you and help your business thrive in the digital era.</p>
+      <p>Best regards,<br>Umair Ahmed Ansari<br>For inquiries, please reach out via the provided social media links.</p>
+    </div>
+    <div class="footer">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/umairansari92/" style="background-color: #0077B5;"><img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://github.com/umairansari92" style="background-color: #333;"><img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub"></a>
+        <a href="https://www.facebook.com/munna.lalokhaiti" style="background-color: #3b5998;"><img src="https://img.icons8.com/ios-filled/50/000000/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/umair.ansari.92" style="background-color: #c32aa3;"><img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram"></a>
+        <a href="https://dataversetechnologies.vercel.app/" style="background-color: #1f2937;"><img src="https://img.icons8.com/ios-filled/50/000000/domain.png" alt="Website"></a>
+        <a href="https://api.whatsapp.com/send?phone=923138624722" style="background-color: #25D366;"><img src="https://img.icons8.com/ios-filled/50/000000/whatsapp.png" alt="WhatsApp"></a>
+      </div>
+      <p>&copy; 2024 DataVerse Technologies. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
