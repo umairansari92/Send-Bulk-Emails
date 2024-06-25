@@ -74,7 +74,8 @@ Ensure your `package.json` includes the necessary dependencies:
 Ensure your .env file contains the following:
 SENDER_EMAIL=your_email@gmail.com
 SENDER_PASSWORD=your_password
-License
+
+##License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ## Contributing
