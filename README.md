@@ -88,6 +88,4 @@ Feel free to submit issues and pull requests. For major changes, please open an 
 ## Contact
 
 For any questions or suggestions, please contact umair.ansari.92@gmail.com.
-
-
-This `README.md` now includes the MIT License section at the appropriate place, ensuring that the project's licensing information is clearly communicated to users and developers. Adjust placeholders like `your_email@gmail.com`, `your_password`, and `Your Name` with your actual details and information.
+Whatsapp: +923138624722, +923002158689
