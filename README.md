@@ -19,7 +19,7 @@ This project allows you to send personalized bulk emails using Node.js, `nodemai
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/your-username/bulk-email-sender.git
+    git clone (https://github.com/umairansari92/Send-Bulk-Emails.git)
     cd bulk-email-sender
     ```
 
